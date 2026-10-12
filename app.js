@@ -13,7 +13,7 @@ app.use(express.json());
 // Rate limit para gatos
 const limiterGatos = rateLimit({
   windowMs: 1 * 60 * 1000, // 1 minuto
-  max: 3,
+  max: 4,
   standardHeaders: true,
   legacyHeaders: false,
   message: {
